@@ -27,6 +27,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@master
+    - run: git config --global user.email "ac7v4@liqunlock.ca"
+    - run: git config --global user.name "ac7v4"
 
     - name: Initialization environment
       env:
@@ -60,8 +62,6 @@ jobs:
         REPO_URL: https://github.com/openwrt/openwrt
         REPO_BRANCH: master
       run: |
-        git config user.email "ac7v4@liqunlock.ca"
-        git config user.name "ac7v4"
         git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
         cd openwrt
     - name: Add PR https://github.com/openwrt/openwrt/pull/4036
