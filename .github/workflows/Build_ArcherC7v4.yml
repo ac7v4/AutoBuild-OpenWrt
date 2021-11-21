@@ -70,7 +70,7 @@ jobs:
         PR_4036_REPO_BRANCH: ipq806x-5.10-dsa
       working-directory: ./openwrt
       run: |
-        git revote -v
+        git remote -v
         git remote remove upstream
         git remote add upstream https://github.com/openwrt/openwrt.git
         git remote -v
