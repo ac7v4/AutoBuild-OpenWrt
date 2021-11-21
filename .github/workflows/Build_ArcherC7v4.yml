@@ -64,28 +64,28 @@ jobs:
         cd openwrt
     - name: Add PR https://github.com/openwrt/openwrt/pull/4036
       env: 
-        PR_4036_REPO_URL: https://github.com/Ansuel/openwrt
+        PR_4036_REPO_URL: https://github.com/Ansuel/openwrt.git
         PR_4035_REPO_BRANCH: ipq806x-5.10-dsa
       working-directory: ./openwrt
       run: |
         git merge $PR_4036_REPO_URL $PR_4035_REPO_BRANCH
     - name: Add PR https://github.com/openwrt/openwrt/pull/4528
       env: 
-        PR_4528_REPO_URL: https://github.com/clayface/openwrt
+        PR_4528_REPO_URL: https://github.com/clayface/openwrt.git
         PR_4528_REPO_BRANCH: qca8k-backport
       working-directory: ./openwrt
       run: |
         git merge $PR_4528_REPO_URL $PR_4528_REPO_BRANCH
     - name: Add PR https://github.com/openwrt/openwrt/pull/4622
       env: 
-        PR_4622_REPO_URL: https://github.com/neheb/openwrt
+        PR_4622_REPO_URL: https://github.com/neheb/openwrt.git
         PR_4622_REPO_BRANCH: ath79-dsa
       working-directory: ./openwrt
       run: |
         git merge $PR_4622_REPO_URL $PR_4622_REPO_BRANCH
     - name: Add PR https://github.com/openwrt/openwrt/pull/4562
       env: 
-        PR_4562_REPO_URL: https://github.com/Ansuel/openwrt
+        PR_4562_REPO_URL: https://github.com/Ansuel/openwrt.git
         PR_4562_REPO_BRANCH: dsa-qca8k-leds
       working-directory: ./openwrt
       run: |
